@@ -2,7 +2,7 @@
   "name": "eleventy-charts",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": ".eleventy.js",
   "dependencies": {
     "ramda": "^0.27.0",
     "vega": "^5.12.3",

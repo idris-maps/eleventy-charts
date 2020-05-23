@@ -3,14 +3,17 @@ import * as vegalite from 'vega-lite'
 import parseJSON from './parseJsonBlock'
 import { PartCode, startLine, endLine } from './separateCodeblocks'
 
+const wrapInDiv = (svg: string) =>
+  `<div class="chart">${svg}</div>`
+
 const renderVega = async (json: any) => {
   const view = new vega.View(vega.parse(json))
-  return await view.toSVG()
+  return wrapInDiv(await view.toSVG())
 }
 
 const renderVegalite = async (json: any) => {
   const { spec } = vegalite.compile(json)
-  return await renderVega(spec)
+  return wrapInDiv(await renderVega(spec))
 }
 
 const renderUnknown = (language: string, lines: string[]) =>
