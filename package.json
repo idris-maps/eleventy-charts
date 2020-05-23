@@ -23,9 +23,9 @@
   "license": "GPLv2",
   "repository": {
     "type": "git",
-    "url": "https://github.com/idris-maps/swiss-projection.git"
+    "url": "https://github.com/idris-maps/eleventy-charts.git"
   },
   "bugs": {
-    "url": "https://github.com/idris-maps/swiss-projection/issues"
+    "url": "https://github.com/idris-maps/eleventy-charts/issues"
   }
 }
