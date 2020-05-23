@@ -45,3 +45,5 @@ In your markdown, use codeblocks with the `vega` or `vegalite` language:
 }
 \`\`\`
 ```
+
+⚠️ Charts are rendered as static SVG, interactions will be ignored.

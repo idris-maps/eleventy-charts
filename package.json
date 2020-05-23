@@ -15,9 +15,17 @@
   },
   "scripts": {
     "test": "npm run build && npx @11ty/eleventy --input=test.md",
-    "build": "tsc"
+    "build": "tsc",
+    "prepublish": "npm run build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": ["eleventy", "11ty", "plugin", "charts", "vega", "vegalite"],
+  "author": "idris-maps",
+  "license": "GPLv2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/idris-maps/swiss-projection.git"
+  },
+  "bugs": {
+    "url": "https://github.com/idris-maps/swiss-projection/issues"
+  }
 }
