@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "ramda": "^0.27.0"
+    "ramda": "^0.27.0",
+    "vega": "^5.12.3",
+    "vega-lite": "^4.12.2"
   },
   "devDependencies": {
     "@types/ramda": "^0.27.6",

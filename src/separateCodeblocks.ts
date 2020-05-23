@@ -1,9 +1,9 @@
 import { startsWith, replace } from 'ramda'
 
-const startLine = (language: string) =>
+export const startLine = (language: string) =>
   `<pre><code class="language-${language}">`
 
-const endLine = '</code></pre>'
+export const endLine = '</code></pre>'
 
 export interface PartLine {
   type: 'line'
