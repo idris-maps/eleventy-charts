@@ -1,5 +1,5 @@
-import vega from 'vega'
-import vegalite from 'vega-lite'
+import * as vega from 'vega'
+import * as vegalite from 'vega-lite'
 import parseJSON from './parseJsonBlock'
 import { PartCode, startLine, endLine } from './separateCodeblocks'
 
@@ -28,7 +28,7 @@ export const lang = {
 
 export default async ({ language, lines }: PartCode): Promise<string> => {
   try {
-
+    
     if (language === lang.vega) {
       return await renderVega(parseJSON(lines))
     }

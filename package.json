@@ -9,11 +9,12 @@
     "vega-lite": "^4.12.2"
   },
   "devDependencies": {
+    "@11ty/eleventy": "^0.11.0",
     "@types/ramda": "^0.27.6",
     "typescript": "^3.9.3"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run build && npx @11ty/eleventy --input=test.md",
     "build": "tsc"
   },
   "keywords": [],

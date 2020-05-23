@@ -18,6 +18,9 @@ export interface PartCode {
 
 export type Part = PartLine | PartCode 
 
+export const isCodePart = (part: Part): part is PartCode =>
+  part.type === 'code'
+
 interface ReducerResult {
   parts: Part[]
   temp?: { language: string, lines: string[] }
