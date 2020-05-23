@@ -4,6 +4,7 @@
   "description": "An eleventy plugin to create charts",
   "main": ".eleventy.js",
   "dependencies": {
+    "front-matter": "^4.0.0",
     "ramda": "^0.27.0",
     "vega": "^5.12.3",
     "vega-lite": "^4.12.2"
@@ -18,7 +19,14 @@
     "build": "tsc",
     "prepublish": "npm run build"
   },
-  "keywords": ["eleventy", "11ty", "plugin", "charts", "vega", "vegalite"],
+  "keywords": [
+    "eleventy",
+    "11ty",
+    "plugin",
+    "charts",
+    "vega",
+    "vegalite"
+  ],
   "author": "idris-maps",
   "license": "GPLv2",
   "repository": {

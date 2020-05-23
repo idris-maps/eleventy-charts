@@ -1,6 +1,6 @@
 import { pipe, trim } from 'ramda'
 
-const replace = (toRemove: string, toAdd: string) =>
+export const replace = (toRemove: string, toAdd: string) =>
   (string: string) =>
     string.split(toRemove).join(toAdd)
 

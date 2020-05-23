@@ -73,7 +73,6 @@
   "description": "A simple bar chart with embedded data.",
   "width": 400,
   "height": 200,
-  "padding": 5,
   "data": {
     "values": [
       {"a": "A", "b": 28}, {"a": "B", "b": 55}, {"a": "C", "b": 43},
@@ -87,4 +86,24 @@
     "y": {"field": "b", "type": "quantitative"}
   }
 }
+```
+
+## bar-chart
+
+```bar-chart
+---
+width: 500
+height: 200
+color: red
+---
+Letters Amount
+A 28
+B 55
+C 43
+D 91
+E 81
+F 53
+G 19
+H 81
+I 52
 ```
