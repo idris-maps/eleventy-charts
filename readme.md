@@ -1,6 +1,6 @@
 # eleventy-charts
 
-An [`eleventy`](https://www.11ty.dev/) plugin to add charts
+An [`eleventy`](https://www.11ty.dev/) plugin to create charts
 
 ## Usage
 
