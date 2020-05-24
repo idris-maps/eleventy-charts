@@ -150,6 +150,29 @@ Date,Value
 2020-01-09,52
 ```
 
+## multiline-chart
+
+```multiline-chart
+---
+width: 500
+height: 200
+temporal: true
+---
+Date,Value,Stock
+2010-01-01,28,AAA
+2012-02-22,55,AAA
+2013-01-13,43,AAA
+2015-01-04,91,AAA
+2010-01-01,80,BBB
+2012-02-22,53,BBB
+2013-01-13,63,BBB
+2015-01-04,34,BBB
+2010-01-01,18,CCC
+2012-02-22,34,CCC
+2013-01-13,55,CCC
+2015-01-04,76,CCC
+```
+
 ## pie-chart
 
 ```pie-chart

@@ -7,14 +7,16 @@ import renderBar from './bar'
 import renderLine from './line'
 import renderPie from './pie'
 import renderArea from './area'
+import renderMultiline from './multiline'
 
 export const lang = {
   'area-chart': 'area-chart',
   'bar-chart': 'bar-chart',
   'line-chart': 'line-chart',
+  'multiline-chart': 'multiline-chart',
   'pie-chart': 'pie-chart',
-  vega: 'vega',
   'vega-lite': 'vega-lite',
+  vega: 'vega',
   vegalite: 'vegalite',
 }
 
@@ -47,6 +49,10 @@ export default async ({ language, lines }: PartCode): Promise<string> => {
 
     if (language === lang['pie-chart']) {
       return await renderPie(parseText(lines))
+    }
+
+    if (language === lang['multiline-chart']) {
+      return await renderMultiline(parseText(lines))
     }
 
     return renderUnknown(language, lines)
