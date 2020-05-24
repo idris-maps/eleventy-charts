@@ -18,32 +18,19 @@ module.exports = function(eleventyConfig) {
 }
 ```
 
-In your markdown, use codeblocks with the `vega` or `vegalite` language:
+In your markdown, use codeblocks with one of the following languages:
 
-```md
-# My chart
+* `area-chart`
+* `bar-chart`
+* `line-chart`
+* `multiline-chart`
+* `pie-chart`
+* `vega-lite`
+* `vega`
+* `vegalite`
 
-\`\`\`vegalite
-{
-  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "description": "A simple bar chart with embedded data.",
-  "width": 400,
-  "height": 200,
-  "padding": 5,
-  "data": {
-    "values": [
-      {"a": "A", "b": 28}, {"a": "B", "b": 55}, {"a": "C", "b": 43},
-      {"a": "D", "b": 91}, {"a": "E", "b": 81}, {"a": "F", "b": 53},
-      {"a": "G", "b": 19}, {"a": "H", "b": 87}, {"a": "I", "b": 52}
-    ]
-  },
-  "mark": "bar",
-  "encoding": {
-    "x": {"field": "a", "type": "ordinal", "axis": {"labelAngle": 0}},
-    "y": {"field": "b", "type": "quantitative"}
-  }
-}
-\`\`\`
-```
+[`vega`](https://vega.github.io/vega/) and [`vegalite`](https://vega.github.io/vega-lite/) are json objects.
 
-⚠️ Charts are rendered as static SVG, interactions will be ignored.
+The others are `csv` with options set as front-matter.
+
+See the [examples markdown](https://raw.githubusercontent.com/idris-maps/eleventy-charts/master/examples.md) and how they are [rendered](http://eleventy-charts.surge.sh/).
