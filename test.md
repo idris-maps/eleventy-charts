@@ -128,3 +128,13 @@ Date,Value
 2019-11-08,81
 2020-01-09,52
 ```
+
+## pie-chart
+
+```pie-chart
+Letters,Amount
+A,28
+B,55
+C,43
+D,91
+```

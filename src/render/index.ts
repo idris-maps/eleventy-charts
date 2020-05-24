@@ -5,10 +5,12 @@ import { renderVega, renderVegalite } from './vega'
 import renderUnknown from './unknown'
 import renderBar from './bar'
 import renderLine from './line'
+import renderPie from './pie'
 
 export const lang = {
   'bar-chart': 'bar-chart',
   'line-chart': 'line-chart',
+  'pie-chart': 'pie-chart',
   vega: 'vega',
   'vega-lite': 'vega-lite',
   vegalite: 'vegalite',
@@ -35,6 +37,10 @@ export default async ({ language, lines }: PartCode): Promise<string> => {
 
     if (language === lang['line-chart']) {
       return await renderLine(parseText(lines))
+    }
+
+    if (language === lang['pie-chart']) {
+      return await renderPie(parseText(lines))
     }
 
     return renderUnknown(language, lines)
