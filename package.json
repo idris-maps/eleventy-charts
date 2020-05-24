@@ -15,8 +15,9 @@
     "typescript": "^3.9.3"
   },
   "scripts": {
+    "clear": "rm -rf dist && rm -rf _site",
     "test": "npm run build && npx @11ty/eleventy --input=test.md",
-    "build": "tsc",
+    "build": "npm run clear && tsc",
     "prepublish": "npm run build"
   },
   "keywords": [
