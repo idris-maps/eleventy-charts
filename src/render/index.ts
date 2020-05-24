@@ -6,8 +6,10 @@ import renderUnknown from './unknown'
 import renderBar from './bar'
 import renderLine from './line'
 import renderPie from './pie'
+import renderArea from './area'
 
 export const lang = {
+  'area-chart': 'area-chart',
   'bar-chart': 'bar-chart',
   'line-chart': 'line-chart',
   'pie-chart': 'pie-chart',
@@ -37,6 +39,10 @@ export default async ({ language, lines }: PartCode): Promise<string> => {
 
     if (language === lang['line-chart']) {
       return await renderLine(parseText(lines))
+    }
+
+    if (language === lang['area-chart']) {
+      return await renderArea(parseText(lines))
     }
 
     if (language === lang['pie-chart']) {
