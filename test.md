@@ -96,14 +96,14 @@ width: 500
 height: 200
 color: red
 ---
-Letters Amount
-A 28
-B 55
-C 43
-D 91
-E 81
-F 53
-G 19
-H 81
-I 52
+Letters,Amount
+A,28
+B,55
+C,43
+D,91
+E,81
+F,53
+G,19
+H,81
+I,52
 ```
