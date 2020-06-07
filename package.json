@@ -1,6 +1,6 @@
 {
   "name": "eleventy-charts",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "An eleventy plugin to create charts",
   "main": ".eleventy.js",
   "dependencies": {
@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
-    "@types/ramda": "^0.27.6",
+    "@types/ramda": "^0.charts27.6",
     "typescript": "^3.9.3"
   },
   "scripts": {
@@ -37,5 +37,6 @@
   },
   "bugs": {
     "url": "https://github.com/idris-maps/eleventy-charts/issues"
-  }
+  },
+  "files": ["**/*"]
 }
