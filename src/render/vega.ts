@@ -11,5 +11,5 @@ export const renderVega = async (json: any) => {
 
 export const renderVegalite = async (json: any) => {
   const { spec } = vegalite.compile(json)
-  return wrapInDiv(await renderVega(spec))
+  return await renderVega(spec)
 }
